@@ -9,18 +9,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42e064ba0ef794307bd205d5c56347dd, type: 3}
+  m_Script: {fileID: 11500000, guid: 37fc579ceaeb14ea6a5f54bebebadc9b, type: 3}
   m_Name: UIScreen_SampleHUD_Data
   m_EditorClassIdentifier: 
-  data:
-    screenType: 1
-    freezeSimulation: 0
-    lockUIUntilDismissed: 0
-    activeOnLoad: 1
-    resetStateBetweenViewChanges: 0
-    preserveStateAfterScreenToggle: 0
-    views:
-    - {fileID: 11400000, guid: 89668323508074eb3be1cb768bde64c3, type: 2}
-    - {fileID: 11400000, guid: 4744216cd73574e84a096776b071407c, type: 2}
-    triggers: []
-    triggerCode: samplehud
+  screenType: 0
+  freezeSimulation: 0
+  lockUIUntilDismissed: 0
+  activeOnLoad: 1
+  screenOrderGroup: 0
+  resetStateBetweenViewChanges: 0
+  preserveStateAfterScreenToggle: 0
+  views:
+  - {fileID: 11400000, guid: f76880237abe64ca681dc6071bd6f4dd, type: 2}
+  - {fileID: 11400000, guid: 4744216cd73574e84a096776b071407c, type: 2}
+  triggers: []
+  triggerCode: samplehud

@@ -9,12 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a30235a75a4f44eca082bf75bcbcbd6d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0139d5c7fcce418ca64014c3f488f57e, type: 3}
   m_Name: UIView_SampleHUD_Landscape_Data
   m_EditorClassIdentifier: 
-  data:
-    prefab: {fileID: 1844396595316546075, guid: 08cb3a5360f82417ead01beff20555d2,
-      type: 3}
-    filterData:
+  prefab: {fileID: 1844396595316546075, guid: 08cb3a5360f82417ead01beff20555d2, type: 3}
+  filterData:
+    positiveFilters:
     - {fileID: 11400000, guid: e3e0118e375474035a3ce11530fb54a1, type: 2}
-    viewSpecificTriggers: []
+    negativeFilters: []

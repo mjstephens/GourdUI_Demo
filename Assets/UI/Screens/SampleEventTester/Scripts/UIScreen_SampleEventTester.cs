@@ -9,16 +9,6 @@ public class UIScreen_SampleEventTester:
     UIScreen <IUIContractScreen_SampleEventTester, IUIContractView_SampleEventTester, UIState_SampleEventTester>, 
     IUIContractScreen_SampleEventTester
 {
-    #region Setup
-
-    protected override void SetupView()
-    {
-        // Use "viewContract" variable to access IUIContractView_SampleEventTester
-    }
-
-    #endregion Setup
-
-
     #region State
 
     protected override void ResetScreenState()

@@ -20,6 +20,11 @@ public class UIView_SampleHUD_Mobile : UIView<IUIContractScreen_SampleHUD, UISta
 
     #region Setup
 
+    protected override void OnScreenInstantiated()
+    {
+        
+    }
+
     public override void ApplyScreenStateToView(UIState_SampleHUD state)
     {
         healthFill.fillAmount = state.healthValue / 100;

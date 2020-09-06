@@ -9,18 +9,6 @@ public class UIScreen_SampleHUD:
     UIScreen <IUIContractScreen_SampleHUD, IUIContractView_SampleHUD, UIState_SampleHUD>, 
     IUIContractScreen_SampleHUD
 {
-    #region Setup
-
-    protected override void SetupView()
-    {
-        // Optionally implement setup for specific views
-        
-        // Use "viewContract" variable to access IUIContractView_SampleHUD
-    }
-
-    #endregion Setup
-    
-    
     #region State
 
     protected override void ResetScreenState()

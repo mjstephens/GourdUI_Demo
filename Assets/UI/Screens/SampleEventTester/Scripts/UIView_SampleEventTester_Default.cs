@@ -14,6 +14,11 @@ public class UIView_SampleEventTester_Default : UIView<IUIContractScreen_SampleE
 
     #region Setup
 
+    protected override void OnScreenInstantiated()
+    {
+        
+    }
+
     public override void ApplyScreenStateToView(UIState_SampleEventTester state)
     {
         

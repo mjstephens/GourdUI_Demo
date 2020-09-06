@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0139d5c7fcce418ca64014c3f488f57e, type: 3}
-  m_Name: UIView_SampleEventTester_Default_Data
+  m_Name: UIView_MainMenu_Default_Data
   m_EditorClassIdentifier: 
-  prefab: {fileID: 5326277732648689793, guid: 0d7aaf85c9557494f9cb1d35cbb5d7d1, type: 3}
+  prefab: {fileID: 1634949184403840001, guid: 92640de1ea43b48df90ae2b4aca6ee25, type: 3}
   filterData:
     positiveFilters: []
     negativeFilters: []

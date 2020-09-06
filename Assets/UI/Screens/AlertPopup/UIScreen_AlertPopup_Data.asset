@@ -10,16 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 37fc579ceaeb14ea6a5f54bebebadc9b, type: 3}
-  m_Name: UIScreen_SampleEventTester_Data
+  m_Name: UIScreen_AlertPopup_Data
   m_EditorClassIdentifier: 
   screenType: 0
-  freezeSimulation: 0
+  freezeSimulation: 1
   lockUIUntilDismissed: 0
   activeOnLoad: 1
-  screenOrderGroup: 1
+  persistent: 0
   resetStateBetweenViewChanges: 0
   preserveStateAfterScreenToggle: 0
   views:
-  - {fileID: 11400000, guid: aadeb1e01397e4222be9cf1fc968233e, type: 2}
+  - {fileID: 11400000, guid: 7cbd095818a1f4ea283b06ac3f4b543d, type: 2}
+  - {fileID: 11400000, guid: dc8838820201344f68a68f22645ac6d0, type: 2}
   triggers: []
-  triggerCode: 
+  triggerCode: alertpopup

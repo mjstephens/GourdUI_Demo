@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 37fc579ceaeb14ea6a5f54bebebadc9b, type: 3}
-  m_Name: UIScreen_SampleEventTester_Data
+  m_Name: UIScreen_MainMenu_Data
   m_EditorClassIdentifier: 
   screenType: 0
   freezeSimulation: 0
   lockUIUntilDismissed: 0
   activeOnLoad: 1
-  screenOrderGroup: 1
+  screenOrderGroup: 0
   resetStateBetweenViewChanges: 0
   preserveStateAfterScreenToggle: 0
   views:
-  - {fileID: 11400000, guid: aadeb1e01397e4222be9cf1fc968233e, type: 2}
+  - {fileID: 11400000, guid: 77c0aa46185a840a5b308a1c24423d56, type: 2}
   triggers: []
-  triggerCode: 
+  triggerCode: mainmenu
