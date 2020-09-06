@@ -61,3 +61,4 @@ crashlytics-build.properties
 workspace.xml
 *.xml
 *.DotSettings
+.idea
