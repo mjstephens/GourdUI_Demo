@@ -62,3 +62,4 @@ workspace.xml
 *.xml
 *.DotSettings
 .idea
+.DS_Store

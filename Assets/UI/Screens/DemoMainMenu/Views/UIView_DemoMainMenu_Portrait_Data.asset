@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0139d5c7fcce418ca64014c3f488f57e, type: 3}
+  m_Name: UIView_DemoMainMenu_Portrait_Data
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 3185177732918771160, guid: 81e4c3ad5ed804525a69c9df578d996b, type: 3}
+  filterData:
+    positiveFilters:
+    - {fileID: 11400000, guid: 539942ee6dc7d41858fe1c57162c2116, type: 2}
+    negativeFilters: []

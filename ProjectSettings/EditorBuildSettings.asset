@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/1-Popups.unity
     guid: 2258863761945401abe3ec73c6e5a6c0
+  - enabled: 1
+    path: Assets/Scenes/2-DragComponents.unity
+    guid: bbd506d9fd4bd4b87b81ac97def22428
   m_configObjects: {}
