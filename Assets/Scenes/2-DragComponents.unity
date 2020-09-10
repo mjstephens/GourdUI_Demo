@@ -960,11 +960,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1504849857}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 87.508865, y: -198.59961}
+  m_AnchoredPosition: {x: 128, y: -211}
   m_SizeDelta: {x: 144.41748, y: 148.9104}
   m_Pivot: {x: 0.49999982, y: 0.5000005}
 --- !u!114 &788217670
@@ -980,6 +980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   container: {fileID: 1504849857}
+  debug: 0
   group: {fileID: 877156659}
 --- !u!114 &788217671
 MonoBehaviour:
@@ -993,9 +994,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 438023e9bfc34daa813ec2754f256672, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dragTarget: {fileID: 788217669}
-  lerpSpeed: 25
-  flingSlowdown: 20
+  _dragObject: {fileID: 0}
+  _lerpSpeed: 25
+  _flingSlowdown: 15
 --- !u!114 &788217672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1302,7 +1303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1080, y: 1920}
@@ -1385,11 +1386,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1504849857}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 194.48, y: 211.5}
+  m_AnchoredPosition: {x: 234.97115, y: 199.0997}
   m_SizeDelta: {x: 81.46735, y: 84.00185}
   m_Pivot: {x: 0.49999982, y: 0.5000005}
 --- !u!114 &1009439609
@@ -1405,6 +1406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   container: {fileID: 1504849857}
+  debug: 0
   group: {fileID: 877156659}
 --- !u!114 &1009439610
 MonoBehaviour:
@@ -1418,9 +1420,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 438023e9bfc34daa813ec2754f256672, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dragTarget: {fileID: 1009439608}
-  lerpSpeed: 25
-  flingSlowdown: 20
+  _dragObject: {fileID: 0}
+  _lerpSpeed: 25
+  _flingSlowdown: 15
 --- !u!114 &1009439611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1494,8 +1496,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -192.6701, y: 78.40045}
-  m_SizeDelta: {x: 162.40515, y: 321.5918}
+  m_AnchoredPosition: {x: -132.90887, y: 63.2997}
+  m_SizeDelta: {x: 305.15488, y: 321.5918}
   m_Pivot: {x: 0.49999982, y: 0.5000005}
 --- !u!114 &1055914364
 MonoBehaviour:
@@ -1510,6 +1512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   container: {fileID: 1504849857}
+  debug: 0
   group: {fileID: 877156659}
 --- !u!114 &1055914365
 MonoBehaviour:
@@ -1523,9 +1526,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 438023e9bfc34daa813ec2754f256672, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dragTarget: {fileID: 1055914363}
-  lerpSpeed: 25
-  flingSlowdown: 20
+  _dragObject: {fileID: 0}
+  _lerpSpeed: 25
+  _flingSlowdown: 15
 --- !u!114 &1055914366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1684,16 +1687,16 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1009439608}
-  - {fileID: 1055914363}
   - {fileID: 788217669}
+  - {fileID: 1055914363}
+  - {fileID: 1009439608}
   m_Father: {fileID: 975595297}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15.3, y: -47.4}
-  m_SizeDelta: {x: 739.27515, y: 927.4571}
+  m_AnchoredPosition: {x: -11, y: -30}
+  m_SizeDelta: {x: 612.96704, y: 768.99725}
   m_Pivot: {x: 0.49999982, y: 0.5000005}
 --- !u!114 &1504849858
 MonoBehaviour:
@@ -1708,6 +1711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   container: {fileID: 0}
+  debug: 1
   group: {fileID: 0}
 --- !u!114 &1504849859
 MonoBehaviour:
@@ -1758,9 +1762,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 438023e9bfc34daa813ec2754f256672, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dragTarget: {fileID: 1504849857}
-  lerpSpeed: 25
-  flingSlowdown: 20
+  _dragObject: {fileID: 0}
+  _lerpSpeed: 25
+  _flingSlowdown: 15
 --- !u!1 &1764211242
 GameObject:
   m_ObjectHideFlags: 0
