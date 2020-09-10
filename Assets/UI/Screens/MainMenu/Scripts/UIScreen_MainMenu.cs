@@ -1,5 +1,4 @@
 using GourdUI;
-using UnityEngine;
 using UnityEngine.SceneManagement;
 
 /// <summary>
@@ -14,6 +13,11 @@ public class UIScreen_MainMenu:
     protected override void ResetScreenState()
     {
         // Use "state" variable to access UIState_MainMenu
+    }
+
+    protected override void OnViewPreDestroy()
+    {
+        
     }
 
     #endregion State

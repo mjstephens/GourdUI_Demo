@@ -14,7 +14,7 @@ public class UIScreen_AlertPopup:
     [Header("Values")] 
     public float randomPosOffsetRange = 20;
 
-    public static int activeCount = 0;
+    public static int activeCount;
 
     #endregion Data
     
@@ -26,7 +26,7 @@ public class UIScreen_AlertPopup:
         base.OnScreenInstantiated();
         
         activeCount++;
-        FindObjectOfType<SceneController_Popups>().PopulateAlert(this);
+        //FindObjectOfType<SceneController_Popups>().PopulateAlert(this);
     }
 
     #endregion Setup
@@ -44,44 +44,15 @@ public class UIScreen_AlertPopup:
 
 
     #region State
-
+    
     protected override void ResetScreenState()
     {
         // Use "state" variable to access UIState_AlertPopup
-        state = new UIState_AlertPopup
-        {
-            titleText = "AlertTitle",
-            bodyText = "Alert Body",
-            dismissButtonText = "Button Text",
-            backgroundColor = Color.white,
-            alertPanelOffset = Vector2.zero
-        };
+        state = SceneController_Popups.GetNewPopupState(randomPosOffsetRange);
     }
 
     #endregion State
-
-
-    #region Content
-
-    public void SetAlertScreenContent(
-        string titleText,
-        string bodyText,
-        Color backgroundColor,
-        string dismissButtonText = "Okay")
-    {
-        state = new UIState_AlertPopup
-        {
-            titleText = titleText,
-            bodyText = bodyText,
-            dismissButtonText = dismissButtonText,
-            backgroundColor = backgroundColor,
-            alertPanelOffset = GetAlertPanelOffset()
-        };
-        viewContract.ApplyScreenStateToView(state);
-    }
-
-    #endregion Content
-
+    
 
     #region View
 
@@ -90,17 +61,10 @@ public class UIScreen_AlertPopup:
         Destroy(gameObject);
     }
 
-    #endregion View
-
-
-    #region Utility
-
-    private Vector2 GetAlertPanelOffset()
+    public void OnUpdateDragState(RectDragSourceState s)
     {
-        float x = Random.Range(-randomPosOffsetRange, randomPosOffsetRange);
-        float y = Random.Range(-randomPosOffsetRange, randomPosOffsetRange);
-        return new Vector2(x, y);
+        state.dragState = s;
     }
 
-    #endregion Utility
+    #endregion View
 }

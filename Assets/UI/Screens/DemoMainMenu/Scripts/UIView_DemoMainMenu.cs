@@ -27,7 +27,7 @@ public class UIView_DemoMainMenu : UIView<IUIContractScreen_DemoMainMenu, UIStat
         // a screen is being instantiated for the first time.
     }
 
-    public override void ApplyScreenStateToView(UIState_DemoMainMenu state)
+    public override void ApplyScreenStateToView(UIState_DemoMainMenu state, bool isScreenInstantiation)
     {
         exitConfirmPanel.SetActive(state.confirmingExit);
     }

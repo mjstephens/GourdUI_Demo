@@ -19,7 +19,7 @@ public class UIView_SampleEventTester_Default : UIView<IUIContractScreen_SampleE
         
     }
 
-    public override void ApplyScreenStateToView(UIState_SampleEventTester state)
+    public override void ApplyScreenStateToView(UIState_SampleEventTester state, bool isScreenInstantiation)
     {
         
     }

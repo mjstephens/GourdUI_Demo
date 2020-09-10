@@ -15,7 +15,12 @@ public class UIScreen_SampleEventTester:
     {
         // Use "state" variable to access UIState_SampleEventTester
     }
-    
+
+    protected override void OnViewPreDestroy()
+    {
+        
+    }
+
     #endregion State
 
 

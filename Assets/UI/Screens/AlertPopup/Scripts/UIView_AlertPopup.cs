@@ -13,9 +13,9 @@ public class UIView_AlertPopup : UIView<IUIContractScreen_AlertPopup, UIState_Al
     public TMP_Text alertTitleText;
     public TMP_Text alertBodyText;
     public TMP_Text alertDismissButtonText;
-    public RectTransform alertPanelTransform;
     public Image alertBackground;
     public UIAlertPopupAnimation animationComponent;
+    public RectDragSource dragSource;
 
     #endregion Fields
 
@@ -27,16 +27,22 @@ public class UIView_AlertPopup : UIView<IUIContractScreen_AlertPopup, UIState_Al
         animationComponent.AnimateIn();
     }
 
-    public override void ApplyScreenStateToView(UIState_AlertPopup state)
+    public override void ApplyScreenStateToView(UIState_AlertPopup state, bool isScreenInstantiation)
     {
         alertTitleText.text = state.titleText;
         alertBodyText.text = state.bodyText;
         alertDismissButtonText.text = state.dismissButtonText;
         alertBackground.color = state.backgroundColor;
-        alertPanelTransform.position = new Vector3(
-            alertPanelTransform.position.x + state.alertPanelOffset.x, 
-            alertPanelTransform.position.y + state.alertPanelOffset.y, 
-            alertPanelTransform.position.z);
+        
+        // Update drag position
+        if (isScreenInstantiation)
+        {
+            dragSource.dynamicTransform.localPosition += state.alertPanelPositionOffset;
+        }
+        else
+        {
+            dragSource.ApplyState(state.dragState);
+        }
     }
 
     #endregion Setup
@@ -47,6 +53,7 @@ public class UIView_AlertPopup : UIView<IUIContractScreen_AlertPopup, UIState_Al
     protected override void OnViewPreDestroy()
     {
         // Optionally do things here before the view is destroyed
+        screenContract.OnUpdateDragState(dragSource.RetrieveState());
     }
 
     #endregion Teardown

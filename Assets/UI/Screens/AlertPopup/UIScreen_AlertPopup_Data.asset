@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: UIScreen_AlertPopup_Data
   m_EditorClassIdentifier: 
   screenType: 0
-  freezeSimulation: 1
+  freezeSimulation: 0
   lockUIUntilDismissed: 0
   activeOnLoad: 1
   persistent: 0

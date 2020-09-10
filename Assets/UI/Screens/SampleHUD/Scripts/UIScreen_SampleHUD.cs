@@ -18,6 +18,11 @@ public class UIScreen_SampleHUD:
         state.coinsValue = SampleGameController.Instance._currentCoins;
     }
 
+    protected override void OnViewPreDestroy()
+    {
+        
+    }
+
     #endregion State
 
 

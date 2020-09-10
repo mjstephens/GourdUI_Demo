@@ -29,6 +29,11 @@ public class UIScreen_DemoMainMenu:
         state.confirmingExit = false;
     }
 
+    protected override void OnViewPreDestroy()
+    {
+        
+    }
+
     #endregion State
 
 

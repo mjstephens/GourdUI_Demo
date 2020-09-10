@@ -25,7 +25,7 @@ public class UIView_SampleHUD_Mobile : UIView<IUIContractScreen_SampleHUD, UISta
         
     }
 
-    public override void ApplyScreenStateToView(UIState_SampleHUD state)
+    public override void ApplyScreenStateToView(UIState_SampleHUD state, bool isScreenInstantiation)
     {
         healthFill.fillAmount = state.healthValue / 100;
         healthLabel.text = state.healthValue.ToString(CultureInfo.InvariantCulture);

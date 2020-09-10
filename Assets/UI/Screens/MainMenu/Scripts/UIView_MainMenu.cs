@@ -19,7 +19,7 @@ public class UIView_MainMenu : UIView<IUIContractScreen_MainMenu, UIState_MainMe
         
     }
 
-    public override void ApplyScreenStateToView(UIState_MainMenu state)
+    public override void ApplyScreenStateToView(UIState_MainMenu state, bool isScreenInstantiation)
     {
         
     }

@@ -11,5 +11,6 @@ public class UIState_AlertPopup : UIState
     public string dismissButtonText;
     public Color backgroundColor;
 
-    public Vector2 alertPanelOffset;
+    public Vector3 alertPanelPositionOffset;
+    public RectDragSourceState dragState;
 }

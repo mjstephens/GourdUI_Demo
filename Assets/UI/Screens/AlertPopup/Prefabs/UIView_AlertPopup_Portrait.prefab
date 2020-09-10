@@ -142,6 +142,8 @@ GameObject:
   - component: {fileID: 1980445431654001068}
   - component: {fileID: 9108083394483315665}
   - component: {fileID: 1107623586335177168}
+  - component: {fileID: 6368969183591892202}
+  - component: {fileID: 8468558563486054369}
   m_Layer: 0
   m_Name: Panel_AlertBG
   m_TagString: Untagged
@@ -169,7 +171,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 240}
+  m_AnchoredPosition: {x: 0.000061035156, y: 226}
   m_SizeDelta: {x: -200.22644, y: -1289.4177}
   m_Pivot: {x: 0.49999997, y: 0.49999982}
 --- !u!222 &1980445431654001068
@@ -222,6 +224,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growSpeed: 12
+--- !u!114 &6368969183591892202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2404535338276936839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 438023e9bfc34daa813ec2754f256672, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dragObject: {fileID: 0}
+  _lerpSpeed: 25
+  _flingSlowdown: 15
+--- !u!114 &8468558563486054369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2404535338276936839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83625fc0d9104a07be14a27ceb0af86d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  container: {fileID: 0}
+  boundaryMode: 1
+  group: {fileID: 0}
 --- !u!1 &3241492072661417345
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,3 +980,4 @@ MonoBehaviour:
   alertPanelTransform: {fileID: 6935966131730522856}
   alertBackground: {fileID: 9108083394483315665}
   animationComponent: {fileID: 1107623586335177168}
+  dragSource: {fileID: 6368969183591892202}

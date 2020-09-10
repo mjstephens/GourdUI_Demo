@@ -28,15 +28,27 @@ namespace Scenes
 
         #endregion UI
 
-
-        public void PopulateAlert(UIScreen_AlertPopup alert)
+        public static UIState_AlertPopup GetNewPopupState(float randomOffsetRange)
         {
-            _flag = !_flag;
-            alert.SetAlertScreenContent(
-                "Alert " + UIScreen_AlertPopup.activeCount,
-                "This is alert number " + UIScreen_AlertPopup.activeCount,
-                Color.Lerp(Color.white, Color.gray, Random.value),
-                "Cool!");
+            return new UIState_AlertPopup
+            {
+                titleText = "Alert " + UIScreen_AlertPopup.activeCount,
+                bodyText = "This is alert number " + UIScreen_AlertPopup.activeCount,
+                dismissButtonText = "Cool!",
+                backgroundColor = Color.Lerp(Color.white, Color.gray, Random.value),
+                alertPanelPositionOffset = GetAlertPanelOffset(randomOffsetRange)
+            };
         }
+
+        #region Utility
+
+        private static Vector2 GetAlertPanelOffset(float randomOffsetRange)
+        {
+            float x = Random.Range(-randomOffsetRange, randomOffsetRange);
+            float y = Random.Range(-randomOffsetRange, randomOffsetRange);
+            return new Vector2(x, y);
+        }
+
+        #endregion Utility
     }
 }
