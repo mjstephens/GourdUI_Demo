@@ -6,5 +6,5 @@ using GourdUI;
 public interface IUIContractScreen_AlertPopup : IUIContractScreen
 {
     void OnAlertDismissed();
-    void OnUpdateDragState(RectDragSourceState state);
+    void OnUpdateDragState(DragElementState state);
 }

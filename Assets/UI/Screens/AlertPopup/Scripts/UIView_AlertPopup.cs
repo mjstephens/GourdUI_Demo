@@ -15,7 +15,7 @@ public class UIView_AlertPopup : UIView<IUIContractScreen_AlertPopup, UIState_Al
     public TMP_Text alertDismissButtonText;
     public Image alertBackground;
     public UIAlertPopupAnimation animationComponent;
-    public RectDragSource dragSource;
+    public DragElement dragSource;
 
     #endregion Fields
 

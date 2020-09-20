@@ -6,12 +6,12 @@ using UnityEngine;
 public class TestDragRectState : MonoBehaviour
 {
     public GameObject testDraggerPrefab;
-    public RectDragSource _currentDragger;
+    public DragElement _currentDragger;
     public Transform dragParent;
     
     private bool _hasDragger = true;
 
-    private RectDragSourceState _state;
+    private DragElementState _state;
     
 
     // Update is called once per frame
@@ -26,7 +26,7 @@ public class TestDragRectState : MonoBehaviour
             }
             else
             {
-                _currentDragger = Instantiate(testDraggerPrefab, dragParent).GetComponent<RectDragSource>();
+                _currentDragger = Instantiate(testDraggerPrefab, dragParent).GetComponent<DragElement>();
                 _currentDragger.ApplyState(_state);
             }
 

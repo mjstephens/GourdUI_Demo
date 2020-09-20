@@ -12,5 +12,5 @@ public class UIState_AlertPopup : UIState
     public Color backgroundColor;
 
     public Vector3 alertPanelPositionOffset;
-    public RectDragSourceState dragState;
+    public DragElementState dragState;
 }

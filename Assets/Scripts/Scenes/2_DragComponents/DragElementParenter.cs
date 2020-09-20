@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class DragElementParenter : MonoBehaviour
 {
-    public RectDragSource[] innerDraggers;
+    public DragElement[] innerDraggers;
     public Transform dragParent;
     public TMP_Text buttonText;
 

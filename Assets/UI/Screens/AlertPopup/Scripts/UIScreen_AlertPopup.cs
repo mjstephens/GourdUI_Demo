@@ -61,7 +61,7 @@ public class UIScreen_AlertPopup:
         Destroy(gameObject);
     }
 
-    public void OnUpdateDragState(RectDragSourceState s)
+    public void OnUpdateDragState(DragElementState s)
     {
         state.dragState = s;
     }
